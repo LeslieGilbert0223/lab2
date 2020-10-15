@@ -29,6 +29,10 @@ body {
 
 .nav-list {
   list-style: none;
+  display: flex;
+}
+.top-nav-mobile {
+  flex-direction: column;
 }
 
 .nav-item {
@@ -60,7 +64,7 @@ body {
   margin-top: 15px;
 }
 
-.circle-container {
+/* .circle-container {
   height: 300px;
   position: relative;
 }
@@ -75,7 +79,7 @@ body {
 
 .circle-three {
   display: none;
-}
+} */
 
 /* FOOTER */
 .footer {
@@ -108,6 +112,10 @@ body {
     align-items: center;
   }
 
+  .top-nav-mobile {
+    flex-direction: row;
+  }
+
   .nav-item {
     margin: 5px;
   }
@@ -116,6 +124,7 @@ body {
     padding: 10px 0;
   }
 
+  /* MAIN CONTENT - MEQIA QUERIES */
   .main-container {
     display: flex;
     align-items: center;
@@ -130,12 +139,15 @@ body {
   }
 
   .circle-one {
-    display: inline-block;
+    /* display: flex; */
     height: 200px;
     width: 200px;
     border-radius: 50%;
     background-color: rgba(247, 136, 167, 0.6); /*PINK*/
+    /* transform: translate(-50% -50%); */
     position: absolute;
+    /* justify-content: flex-end; */
+    align-content: flex-end;
   }
 
   .circle-two {
@@ -143,6 +155,7 @@ body {
     width: 150px;
     border-radius: 50%;
     background-color: rgba(247, 193, 162, 0.7); /*ORANGE*/
+    /* transform: translate(75% 75%); */
     position: absolute;
   }
 
@@ -154,6 +167,7 @@ body {
     position: absolute;
   }
 
+  /* MAIN CONTENT - FOOTER */
   .footer {
     display: flex;
     justify-content: space-between;
